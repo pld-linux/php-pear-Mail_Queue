@@ -34,8 +34,8 @@ Klasa ta potrafi obs³ugiwaæ kolejki poczty. Jest to wrapper na
 Pear::Mail i Pear::DB. Mo¿e ³adowaæ, zapisywaæ oraz wysy³aæ pocztê w
 tle, a tak¿e robiæ backup niektórych maili. Maile s± umieszczane w
 tymczasowym kontenerze czekaj±c na wys³anie do MTA (Mail Transport
-Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontaba lub
-w inny sposób.
+Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontaba lub w
+inny sposób.
 
 Ta klasa ma w PEAR status: %{_status}
 
