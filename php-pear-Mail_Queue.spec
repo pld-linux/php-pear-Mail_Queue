@@ -2,8 +2,8 @@
 %define		_class		Mail
 %define		_subclass	Queue
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - put mails in queue and send them later in background
-Summary(pl):	%{_class}_%{_subclass} - ustawia pocztê w kolejce i wysy³a j± pó¼niej
+Summary:	%{_pearname} - put mails in queue and send them later in background
+Summary(pl):	%{_pearname} - ustawia pocztê w kolejce i wysy³a j± pó¼niej
 Name:		php-pear-%{_pearname}
 Version:	0.9
 Release:	3
