@@ -1,0 +1,27 @@
+--- ./Queue.php.org	Sun Sep 22 03:04:55 2002
++++ ./Queue.php	Mon Sep 30 18:43:05 2002
+@@ -20,7 +20,7 @@
+ 
+ /**
+ * Class for handle mail queue managment.
+-* Wrapper for Pear::Mail and Pear::DB.
++* Wrapper for PEAR::Mail and PEAR::DB.
+ * Could load, save and send saved mails in background
+ * and also backup some mails.
+ *
+@@ -73,7 +73,7 @@
+ * @package  Mail_Queue
+ * @access   public
+ */
+-class Mail_Queue extends Pear {
++class Mail_Queue extends PEAR {
+ 
+     /**
+     * Mail options: smtp, mail etc. see Mail::factory
+@@ -275,4 +275,4 @@
+ 
+ }
+ 
+-?>
+\ No newline at end of file
++?>
