@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - put mails in queue and send them later in background
 Summary(pl):	%{_pearname} - ustawia pocztê w kolejce i wysy³a j± pó¼niej
 Name:		php-pear-%{_pearname}
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	e0b1fecdf3f66be8425b521f4edbb84a
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	b298bbde5b570a6aed59539ee17cda64
 Patch0:		%{name}-cosmetic.patch
 URL:		http://pear.php.net/package/Mail_Queue/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
