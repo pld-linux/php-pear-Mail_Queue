@@ -27,7 +27,7 @@ backup some mails. Mail queue class put mails in a temporary container
 waiting to be fed to the MTA (Mail Transport Agent) and send them
 later (eg. every few minutes) by crontab or in other way.
 
-This class has in PEAR status: %{_status}
+This class has in PEAR status: %{_status}.
 
 %description -l pl
 Klasa ta potrafi obs³ugiwaæ kolejki poczty. Jest to wrapper na
@@ -37,7 +37,7 @@ tymczasowym kontenerze czekaj±c na wys³anie do MTA (Mail Transport
 Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontaba lub w
 inny sposób.
 
-Ta klasa ma w PEAR status: %{_status}
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
