@@ -21,8 +21,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Class for handle mail queue managment. Wrapper for Pear::Mail and
-Pear::DB. Could load, save and send saved mails in background and also
+Class for handle mail queue managment. Wrapper for PEAR::Mail and
+PEAR::DB. Could load, save and send saved mails in background and also
 backup some mails. Mail queue class put mails in a temporary container
 waiting to be fed to the MTA (Mail Transport Agent) and send them
 later (eg. every few minutes) by crontab or in other way.
@@ -31,7 +31,7 @@ This class has in PEAR status: %{_status}.
 
 %description -l pl
 Klasa ta potrafi obs³ugiwaæ kolejki poczty. Jest to wrapper na
-Pear::Mail i Pear::DB. Mo¿e ³adowaæ, zapisywaæ oraz wysy³aæ pocztê w
+PEAR::Mail i PEAR::DB. Mo¿e ³adowaæ, zapisywaæ oraz wysy³aæ pocztê w
 tle, a tak¿e robiæ backup niektórych maili. Maile s± umieszczane w
 tymczasowym kontenerze czekaj±c na wys³anie do MTA (Mail Transport
 Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontaba lub w
