@@ -13,7 +13,6 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b298bbde5b570a6aed59539ee17cda64
-Patch0:		%{name}-cosmetic.patch
 URL:		http://pear.php.net/package/Mail_Queue/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -42,7 +41,6 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %setup -q -c
 cd %{_pearname}-%{version}
-%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
