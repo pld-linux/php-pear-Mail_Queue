@@ -5,7 +5,7 @@
 
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - put mails in queue and send them later in background
-Summary(pl):	%{_pearname} - ustawia pocztê w kolejce i wysy³a j± pó¼niej
+Summary(pl):	%{_pearname} - ustawianie poczty w kolejce i pó¼niejsze jej wysy³anie
 Name:		php-pear-%{_pearname}
 Version:	1.1.3
 Release:	1
