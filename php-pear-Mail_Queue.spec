@@ -3,10 +3,10 @@
 %define		_subclass	Queue
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - put mails in queue and send them later in background
-Summary(pl):	%{_class}_%{_subclass} - ustaw pocztê o kolejce i wy¶lij j± pó¼niej
+Summary(pl):	%{_class}_%{_subclass} - ustawia pocztê w kolejce i wysy³a j± pó¼niej
 Name:		php-pear-%{_pearname}
 Version:	0.9
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -29,7 +29,7 @@ Klasa ta potrafi obs³ugiwaæ kolejki poczty. Jest to wrapper na
 Pear::Mail i Pear::DB. Mo¿e ³adowaæ, zapisywaæ oraz wysy³aæ pocztê w
 tle, a tak¿e robiæ backup niektórych maili. Maile s± umieszczane w
 tymczasowym kontenerze czekaj±c na wys³anie do MTA (Mail Transport
-Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontab-a lub
+Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontaba lub
 w inny sposób.
 
 %prep
