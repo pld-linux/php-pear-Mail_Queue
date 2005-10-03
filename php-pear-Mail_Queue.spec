@@ -53,7 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %doc docs/%{_pearname}/docs/*
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
