@@ -5,7 +5,7 @@
 
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - put mails in queue and send them later in background
-Summary(pl):	%{_pearname} - ustawianie poczty w kolejce i pó¼niejsze jej wysy³anie
+Summary(pl.UTF-8):   %{_pearname} - ustawianie poczty w kolejce i pÃ³Åºniejsze jej wysyÅ‚anie
 Name:		php-pear-%{_pearname}
 Version:	1.1.3
 Release:	5
@@ -31,13 +31,13 @@ later (eg. every few minutes) by crontab or in other way.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa ta potrafi obs³ugiwaæ kolejki poczty. Jest to wrapper na
-PEAR::Mail i PEAR::DB. Mo¿e ³adowaæ, zapisywaæ oraz wysy³aæ pocztê w
-tle, a tak¿e robiæ backup niektórych maili. Maile s± umieszczane w
-tymczasowym kontenerze czekaj±c na wys³anie do MTA (Mail Transport
-Agent) i s± wysy³ane pó¼niej (np. co kilka minut) przez crontaba lub w
-inny sposób.
+%description -l pl.UTF-8
+Klasa ta potrafi obsÅ‚ugiwaÄ‡ kolejki poczty. Jest to wrapper na
+PEAR::Mail i PEAR::DB. MoÅ¼e Å‚adowaÄ‡, zapisywaÄ‡ oraz wysyÅ‚aÄ‡ pocztÄ™ w
+tle, a takÅ¼e robiÄ‡ backup niektÃ³rych maili. Maile sÄ… umieszczane w
+tymczasowym kontenerze czekajÄ…c na wysÅ‚anie do MTA (Mail Transport
+Agent) i sÄ… wysyÅ‚ane pÃ³Åºniej (np. co kilka minut) przez crontaba lub w
+inny sposÃ³b.
 
 Ta klasa ma w PEAR status: %{_status}.
 
