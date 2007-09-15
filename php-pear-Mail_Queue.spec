@@ -2,17 +2,17 @@
 %define		_class		Mail
 %define		_subclass	Queue
 %define		_status		stable
-
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - put mails in queue and send them later in background
 Summary(pl.UTF-8):	%{_pearname} - ustawianie poczty w kolejce i późniejsze jej wysyłanie
 Name:		php-pear-%{_pearname}
-Version:	1.1.3
-Release:	5
+Version:	1.2.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e1eae2fd188f1926a83b97cdcf0c239e
+# Source0-md5:	7ae8b9bb434ea25e939ab10443ca00c4
 URL:		http://pear.php.net/package/Mail_Queue/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
