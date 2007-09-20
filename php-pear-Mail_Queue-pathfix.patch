@@ -1,0 +1,11 @@
+--- Mail_Queue-1.2.1/usr/share/pear/Mail/Queue/Container/creole.php~	2007-09-20 10:03:47.000000000 +0200
++++ Mail_Queue-1.2.1/usr/share/pear/Mail/Queue/Container/creole.php	2007-09-20 10:05:00.000000000 +0200
+@@ -28,7 +28,7 @@
+  * @package  Mail_Queue
+  * @version  $Id$
+  */
+-require_once 'creole/Creole.php';
++require_once 'Text/Wiki/Creole.php';
+ require_once 'Mail/Queue/Container.php';
+ 
+ /**
