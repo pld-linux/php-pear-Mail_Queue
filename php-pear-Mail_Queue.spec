@@ -17,7 +17,6 @@ URL:		http://pear.php.net/package/Mail_Queue/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-creole
 Requires:	php-pear
 Requires:	php-pear-Mail
 BuildArch:	noarch
@@ -51,14 +50,21 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+cat > optional-packages.txt << 'EOF'
+php-pear-%{_pearname} can optionally use package php-creole
+EOF
+
+%post
+if [ -f %{_docdir}/%{name}-%{version}/optional-packages.txt ]; then
+	cat %{_docdir}/%{name}-%{version}/optional-packages.txt
+fi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log
-%doc docs/%{_pearname}/docs/*
+%doc install.log docs/%{_pearname}/docs/* optional-packages.txt
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
