@@ -3,26 +3,31 @@
 %define		_subclass	Queue
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - put mails in queue and send them later in background
 Summary(pl.UTF-8):	%{_pearname} - ustawianie poczty w kolejce i późniejsze jej wysyłanie
 Name:		php-pear-%{_pearname}
 Version:	1.2.3
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	ba6e9c0bbf0a782805579a328972e7d3
 URL:		http://pear.php.net/package/Mail_Queue/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-Mail
+Requires:	php-pear-Mail_Mime
+Suggests:	php-creole
+Suggests:	php-jargon
+Suggests:	php-pear-DB
+Suggests:	php-pear-MDB
+Suggests:	php-pear-MDB2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'pear(creole/Creole.php)'
+%define		_noautoreq	'pear(creole/Creole.php)' pear(DB.*) pear(MDB.*) pear(MDB2.*) pear(jargon.*)
 
 %description
 Class for handle mail queue managment. Wrapper for PEAR::Mail and
