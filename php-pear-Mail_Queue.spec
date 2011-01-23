@@ -57,9 +57,6 @@ cat > optional-packages.txt << 'EOF'
 php-pear-%{_pearname} can optionally use package php-creole
 EOF
 
-# tests should not be packaged
-rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
-
 %post
 if [ -f %{_docdir}/%{name}-%{version}/optional-packages.txt ]; then
 	cat %{_docdir}/%{name}-%{version}/optional-packages.txt
