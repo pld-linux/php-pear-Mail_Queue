@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	Mail_Queue
 Summary:	%{_pearname} - put mails in queue and send them later in background
